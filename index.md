@@ -8,3 +8,4 @@ Useful tools
 * [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/) - Manage all jetbrains apps
 * [iStat](https://bjango.com/mac/istatmenus/) - Monitor Computer Stats
 * [Aerial](https://aerialscreensaver.github.io/) - Screen saver with Apple TV lock screen videos
+* [The Fuck](https://github.com/nvbn/thefuck) - Fix any oopsies in your shell
