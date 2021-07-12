@@ -9,3 +9,4 @@ Useful tools
 * [iStat](https://bjango.com/mac/istatmenus/) - Monitor Computer Stats
 * [Aerial](https://aerialscreensaver.github.io/) - Screen saver with Apple TV lock screen videos
 * [The Fuck](https://github.com/nvbn/thefuck) - Fix any oopsies in your shell
+* [JD-Gui](http://java-decompiler.github.io/) - View contents of jar/aar
