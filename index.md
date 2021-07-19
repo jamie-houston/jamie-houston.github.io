@@ -11,3 +11,6 @@ Useful tools
 * [The Fuck](https://github.com/nvbn/thefuck) - Fix any oopsies in your shell
 * [JD-Gui](http://java-decompiler.github.io/) - View contents of jar/aar
 * [Vysor](https://www.vysor.io/) - View Android device in OSX.
+
+Useful Scripts
+* [Set python3 as default](https://code2care.org/pages/set-python-as-default-version-macos) - Update MacOS Python to 3
