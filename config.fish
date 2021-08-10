@@ -1,18 +1,26 @@
 # Move this to ~/.config/fish/config.fish
 alias "gs"="git status"
-alias "gl"="git log --oneline --graph"
+alias "gl"="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias "gcl"="git checkout -"
 alias "gml"="git merge -"
 alias "gsu"="git submodule update --init --recursive"
 alias "gd"="git diff"
 alias "gfa"="git fetch --all"
 
+# https://geoff.greer.fm/lscolors/
+set -gx LSCOLORS EHfxcxdxBxegecabagacad
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
 function ls --description 'List contents of directory'
-  command ls -lFG $argv
+  command ls -laFG $argv
+end
+
+# to run code from command prompt, run "Shell Command: Install 'code' in command path" in VSCode
+function code --description 'Launches visual code studio in a new window'
+  command code -n $argv
 end
 
 function gclean --description 'Delete all local branches that is already merged to current branch (exludes master)'
@@ -38,13 +46,11 @@ function grep --description 'Colorful grep that ignores binary file and outputs 
 end
 
 # Java
-set -gx JAVA_HOME (/usr/libexec/java_home -v 11)
-set -gx PATH $PATH ~/Library/kotlin-native/bin
+set -gx JAVA_HOME (/usr/libexec/java_home -v11)
 
 # Allow 256 colors in iTerm2 for pretty vim colors
 set -gx CLICOLOR 1
 set -gx TERM xterm-256color
-set -gx ANDROID_SDK_ROOT ~/Library/android/sdk
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
@@ -60,3 +66,10 @@ set -gx D8_PATH ~/src/sf/j2v8/v8/repo/out.gn/x64.optdebug
 set -gx PATH $PATH /usr/local/bin
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
+
+set -gx PATH $PATH ~/Library/kotlin-native/bin
+set -gx ANDROID_SDK_ROOT ~/Library/android/sdk
+set -gx PATH $PATH "$ANDROID_SDK_ROOT/platform-tools"
+set -gx PATH $PATH "$ANDROID_SDK_ROOT/emulator"
+
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
