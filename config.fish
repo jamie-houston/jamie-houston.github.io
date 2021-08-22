@@ -52,22 +52,10 @@ set -gx JAVA_HOME (/usr/libexec/java_home -v11)
 set -gx CLICOLOR 1
 set -gx TERM xterm-256color
 
-# rbenv
-status --is-interactive; and source (rbenv init -|psub)
 thefuck --alias | source
-# eval (python -m virtualfish)
-
-# chrome d8
-#alias "d8"="~/src/sf/j2v8/v8/repo/out.gn/x64.optdebug/d8"
-alias "tick-processor"="~/src/sf/j2v8/v8/repo/tools/mac-tick-processor"
-set -gx D8_PATH ~/src/sf/j2v8/v8/repo/out.gn/x64.optdebug
 
 # shortcuts
 set -gx PATH $PATH /usr/local/bin
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-
-set -gx PATH $PATH ~/Library/kotlin-native/bin
 set -gx ANDROID_SDK_ROOT ~/Library/android/sdk
 set -gx PATH $PATH "$ANDROID_SDK_ROOT/platform-tools"
 set -gx PATH $PATH "$ANDROID_SDK_ROOT/emulator"
