@@ -63,19 +63,6 @@ function grep --description 'Colorful grep that ignores binary file and outputs 
   command grep --color=always -I $argv
 end
 
-function clone --description 'Clone repo, create user/team folder if not in it'
-  # Example git@github.com:foo/bar.git
-  # If done in /foo, will just clone into bar
-  # If done elsewhere, will create /foo and clone into /foo/bar
-  set REPO_URL (string split ":" $argv)[2]
-  set FOLDER_NAME (string split "/" $REPO_URL)[1]
-  if not test $FOLDER_NAME = (basename $PWD)
-    printf "Creating $FOLDER_NAME"
-    mkcd $FOLDER_NAME
-  end
-  command git clone $argv
-end
-
 # https://geoff.greer.fm/lscolors/
 set -gx LSCOLORS EHfxcxdxBxegecabagacad
 
