@@ -1,17 +1,35 @@
-# Move this to ~/.config/fish/config.fish
-alias "gs"="git status"
-alias "gl"="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
-alias "gcl"="git checkout -"
-alias "gml"="git merge -"
-alias "gsu"="git submodule update --init --recursive"
-alias "gd"="git diff"
-alias "gfa"="git fetch --all"
-
-# https://geoff.greer.fm/lscolors/
-set -gx LSCOLORS EHfxcxdxBxegecabagacad
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
+end
+
+# Git Function
+
+function gcl
+  command git checkout -
+end
+
+function gd
+  command git diff
+end
+
+function gfa
+  command git fetch --all
+end
+
+function gml
+  command git merge -
+end
+
+function gl
+  command git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+end
+
+function gs --description 'git status'
+  command git status
+end
+
+function gsu
+  command git submodule update --init --recursive
 end
 
 function ls --description 'List contents of directory'
@@ -38,12 +56,28 @@ function mkcd --description 'Make directory and cd into it'
 end
 
 function adbp --description 'Paste clipboard into emulator'
-    command adb shell input keyevent 279
+  command adb shell input keyevent 279
 end
 
 function grep --description 'Colorful grep that ignores binary file and outputs line number'
   command grep --color=always -I $argv
 end
+
+function clone --description 'Clone repo, create user/team folder if not in it'
+  # Example git@github.com:foo/bar.git
+  # If done in /foo, will just clone into bar
+  # If done elsewhere, will create /foo and clone into /foo/bar
+  set REPO_URL (string split ":" $argv)[2]
+  set FOLDER_NAME (string split "/" $REPO_URL)[1]
+  if not test $FOLDER_NAME = (basename $PWD)
+    printf "Creating $FOLDER_NAME"
+    mkcd $FOLDER_NAME
+  end
+  command git clone $argv
+end
+
+# https://geoff.greer.fm/lscolors/
+set -gx LSCOLORS EHfxcxdxBxegecabagacad
 
 # Java
 set -gx JAVA_HOME (/usr/libexec/java_home -v11)
@@ -53,11 +87,5 @@ set -gx CLICOLOR 1
 set -gx TERM xterm-256color
 
 thefuck --alias | source
-
-# shortcuts
-set -gx PATH $PATH /usr/local/bin
-set -gx ANDROID_SDK_ROOT ~/Library/android/sdk
-set -gx PATH $PATH "$ANDROID_SDK_ROOT/platform-tools"
-set -gx PATH $PATH "$ANDROID_SDK_ROOT/emulator"
 
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
