@@ -7,14 +7,14 @@ function clone --description 'Clone repo, create user/team folder if not in it'
     set repo_name $repo_parts[-1]
     set parent_folder_name $repo_parts[-2]
 
-    set repo_url = $argv
+    set repo_url $argv
 
     # if cloning from git@... split the folder out of the path
-    if string match -q "git*" $folder_name
+    if string match -q "git*" $parent_folder_name
         set parent_folder_name (string split ":" $parent_folder_name)[-1]
-        set repo_name (string split . $bar2[-1])[1]e
+        set repo_name (string split . $repo_parts[-1])[1]
     else
-        set repo_url (string join '' git@ $repo_parts[-3] : $repo_parts[-2] / $repo_parts[-1])
+        set repo_url (string join '' git@ $repo_parts[-3] : $repo_parts[-2] / $repo_parts[-1] .git)
     end
 
     if not test $parent_folder_name = (basename $PWD)
