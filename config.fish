@@ -9,7 +9,7 @@ function gcl
 end
 
 function gd
-  command git diff
+  command git diff --ignore-all-space
 end
 
 function gfa
@@ -24,21 +24,16 @@ function gl
   command git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 end
 
+function gp
+  command git pull
+end
+
 function gs --description 'git status'
   command git status
 end
 
 function gsu
   command git submodule update --init --recursive
-end
-
-function ls --description 'List contents of directory'
-  command ls -laFG $argv
-end
-
-# to run code from command prompt, run "Shell Command: Install 'code' in command path" in VSCode
-function code --description 'Launches visual code studio in a new window'
-  command code -n $argv
 end
 
 function gclean --description 'Delete all local branches that is already merged to current branch (exludes master)'
@@ -48,6 +43,15 @@ end
 
 function cm --description 'git commit with message'
   git commit -am "$argv"
+end
+
+function ls --description 'List contents of directory'
+  command ls -laFG $argv
+end
+
+# to run code from command prompt, run "Shell Command: Install 'code' in command path" in VSCode
+function code --description 'Launches visual code studio in a new window'
+  command code -n $argv
 end
 
 function mkcd --description 'Make directory and cd into it'
@@ -73,6 +77,7 @@ set -gx JAVA_HOME (/usr/libexec/java_home -v11)
 set -gx CLICOLOR 1
 set -gx TERM xterm-256color
 
+set -gx ANDROID_HOME ~/Library/Android/sdk
 thefuck --alias | source
 
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
