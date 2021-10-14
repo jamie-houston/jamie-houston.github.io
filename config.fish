@@ -67,6 +67,10 @@ function grep --description 'Colorful grep that ignores binary file and outputs 
   command grep --color=always -I $argv
 end
 
+function iosi --description 'Update ios repo depdendencies'
+  command bundle install && bundle exec pod repo update && bundle exec pod install
+end
+
 # https://geoff.greer.fm/lscolors/
 set -gx LSCOLORS EHfxcxdxBxegecabagacad
 
