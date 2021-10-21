@@ -5,6 +5,7 @@ Useful tools
   * [tide](https://github.com/IlanCosman/tide) - Fish prompt
   * [fischer](https://github.com/jorgebucaran/fisher) - Fish package manager
   * [nvm.fish](https://github.com/jorgebucaran/nvm.fish) - node package manager for fish
+  * [fig](https://fig.io/) - even better auto complete
 * [rectangle](https://rectangleapp.com/) - OSX Window management
 * [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/) - Manage all jetbrains apps
 * [iStat](https://bjango.com/mac/istatmenus/) - Monitor Computer Stats
