@@ -59,10 +59,6 @@ function mkcd --description 'Make directory and cd into it'
     cd $argv;
 end
 
-function adbp --description 'Paste clipboard into emulator'
-  command adb shell input keyevent 279
-end
-
 function grep --description 'Colorful grep that ignores binary file and outputs line number'
   command grep --color=always -I $argv
 end
