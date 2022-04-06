@@ -67,6 +67,18 @@ function iosi --description 'Update ios repo depdendencies'
   command bundle install && bundle exec pod repo update && bundle exec pod install
 end
 
+# Use https://git.soma.salesforce.com/sbougon/stats-my-org
+function get-number --description 'get count of sas on vpod'
+  cd ~/src/git.soma/sbougon/stats-my-org
+  node get-number-sa.js --username=perfuser@lfs1.com --password=123456 --server=$argv
+end
+
+function set-number --description 'set count of sas on vpod passing in vpod and number'
+  set path_parts (string split " " $argv)
+  cd ~/src/git.soma/sbougon/stats-my-org
+  node set-number-sa.js --username=perfuser@lfs2.com --password=123456 --server=$path_parts[1]  --adminUsername=admin@fs.com --adminPassword=123456 --sa=$path_parts[2]
+end
+
 # https://geoff.greer.fm/lscolors/
 set -gx LSCOLORS EHfxcxdxBxegecabagacad
 
