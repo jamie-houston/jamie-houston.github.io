@@ -18,3 +18,6 @@ Useful Scripts
 * [Set python3 as default](https://code2care.org/pages/set-python-as-default-version-macos) - Update MacOS Python to 3
 * [Make Fish Shell Default](https://flaviocopes.com/macos-terminal-setup/)
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts) - install fonts for iterm/Tide
+
+Useful android/gradle stuff
+* [Dependency Analysis Plugin](https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin/wiki/Adding-to-your-project) - Find unused dependencies.
