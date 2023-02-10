@@ -6,3 +6,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
+# Set git output to paging and leaving on screen
+git config --global --replace-all core.pager "less -F -X"
+
