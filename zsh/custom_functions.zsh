@@ -29,3 +29,11 @@ function adbp() {
         	done
     fi
 }
+
+# delete all branches merged into main
+gclean() {
+  echo "=== Deleting all merged branches ==="
+  git remote prune origin
+  git checkout main && git branch --merged | egrep -v "(^\*|main)" | xargs git branch -d
+  echo "☑️ Done!"
+}
