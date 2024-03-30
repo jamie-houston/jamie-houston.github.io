@@ -21,3 +21,5 @@ Useful Scripts
 
 Useful android/gradle stuff
 * [Dependency Analysis Plugin](https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin/wiki/Adding-to-your-project) - Find unused dependencies.
+
+* This is the end *
