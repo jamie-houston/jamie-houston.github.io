@@ -6,6 +6,8 @@ layout: default
 
 A collection of development tools, tips, and tech adventures. Here you'll find posts about useful development tools, setup guides, and various technical explorations.
 
+[Resume](resume.html) | [GitHub](https://github.com/jamie-houston)
+
 ## Recent Posts
 
 <ul>
