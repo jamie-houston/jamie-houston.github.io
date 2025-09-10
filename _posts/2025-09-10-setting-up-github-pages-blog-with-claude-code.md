@@ -8,11 +8,19 @@ tags: [jekyll, blog, setup, automation]
 
 # Setting Up a GitHub Pages Blog with Claude Code
 
-Today I decided to set up a GitHub Pages blog, and I thought it would be interesting to document the entire process using Claude Code - Anthropic's CLI tool for development tasks.
+Today I decided to set up a GitHub Pages blog, and I thought it would be interesting to document the entire process using [Claude Code](https://claude.ai/code) - Anthropic's CLI tool for development tasks.
+
+## The Initial Prompt
+
+Here's exactly what I asked Claude Code to get this whole process started:
+
+> "I want to setup a github blog. I think I can do it from a github repo (that I'm currently in). If that's true, help me set it up. Also create the first blog post, which documents how I set it up using Claude Code"
+
+That single prompt kicked off the entire automated setup process you're reading about!
 
 ## What is GitHub Pages?
 
-GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. It's perfect for blogs, project documentation, and personal websites.
+[GitHub Pages](https://pages.github.com/) is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. It's perfect for blogs, project documentation, and personal websites.
 
 ## The Setup Process
 
@@ -91,9 +99,17 @@ The repository already had a Jekyll GitHub Actions workflow that will automatica
 
 ## Conclusion
 
-Setting up a GitHub Pages blog with Claude Code was surprisingly smooth. What could have taken hours of researching Jekyll documentation and GitHub Pages setup guides was completed in minutes with intelligent assistance that understood both the technical requirements and best practices.
+Setting up a GitHub Pages blog with Claude Code was surprisingly smooth. What could have taken hours of researching [Jekyll documentation](https://jekyllrb.com/) and GitHub Pages setup guides was completed in minutes with intelligent assistance that understood both the technical requirements and best practices.
 
 The combination of GitHub Pages' free hosting, Jekyll's powerful static site generation, and Claude Code's intelligent setup assistance makes for a powerful blogging solution for developers.
+
+## Useful Links
+
+- [Claude Code](https://claude.ai/code) - Anthropic's CLI development tool
+- [GitHub Pages](https://pages.github.com/) - Free static site hosting
+- [Jekyll](https://jekyllrb.com/) - Static site generator
+- [Jekyll Themes](https://jekyllrb.com/docs/themes/) - Customize your blog's appearance
+- [GitHub Actions for Pages](https://github.com/actions/deploy-pages) - Automated deployment
 
 ---
 
