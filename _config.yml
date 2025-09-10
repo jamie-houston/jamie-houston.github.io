@@ -1,14 +1,14 @@
-title: Jamie Houston's Blog
+title: Jamie Houston
 description: A blog about development tools, tips, and tech adventures
 author: Jamie Houston
-email: your.email@example.com
+email: jamie.houston@gmail.com
 baseurl: ""
-url: "https://jamie-houston.github.io"
+url: "https://houstonthings.com"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: jekyll-theme-architect
+theme: jekyll-theme-chirpy
 
 # Plugins
 plugins:

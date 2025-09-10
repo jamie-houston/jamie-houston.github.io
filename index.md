@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Welcome to Jamie Houston's Blog
+# Jamie Houston's Blog
 
 A collection of development tools, tips, and tech adventures. Here you'll find posts about useful development tools, setup guides, and various technical explorations.
 

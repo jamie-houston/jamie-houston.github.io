@@ -9,7 +9,11 @@ This is a Jekyll-based GitHub Pages blog site for Jamie Houston. The site uses t
 ## Development Commands
 
 ### Local Development
+**IMPORTANT**: Always use Homebrew Ruby instead of system Ruby:
 ```bash
+# Set PATH to use Homebrew Ruby (required every time)
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
 # Install dependencies
 bundle install
 
@@ -26,12 +30,16 @@ If Ruby/Jekyll aren't installed:
 # Install Ruby via Homebrew (macOS)
 brew install ruby
 
-# Add Homebrew Ruby to PATH
+# Add Homebrew Ruby to PATH (add to ~/.zshrc or ~/.bash_profile for permanent)
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Install Bundler and Jekyll
 gem install bundler jekyll
 ```
+
+### Common Issues
+- **Bundler version error**: You're using system Ruby (2.6) instead of Homebrew Ruby (3.4). Always run `export PATH="/opt/homebrew/opt/ruby/bin:$PATH"` first
+- **Config changes not appearing**: Restart Jekyll server after editing `_config.yml`
 
 ## Architecture & Structure
 
@@ -60,7 +68,7 @@ gem install bundler jekyll
 - `site/` - Legacy/alternative site content
 
 ## Key Jekyll Configuration
-- Theme: `jekyll-theme-architect`
+- Theme: `jekyll-theme-chirpy`
 - Plugins: `jekyll-feed`, `jekyll-sitemap`
 - Markdown processor: `kramdown`
 - Syntax highlighter: `rouge`
@@ -70,6 +78,6 @@ gem install bundler jekyll
 ## Dependencies
 Ruby gems managed via Bundler:
 - Jekyll 4.4+
-- jekyll-theme-architect
+- jekyll-theme-chirpy
 - jekyll-feed (RSS feed generation)
 - jekyll-sitemap (XML sitemap generation)

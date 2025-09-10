@@ -1,39 +1,39 @@
-# This was unintentional
+# Jamie Houston's Blog
 
-## Welcome to GitHub Pages
+A Jekyll-based blog about development tools, tips, and tech adventures.
 
-You can use the [editor on GitHub](https://github.com/jamie-houston/jamie-houston.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+🌐 **Live Site**: [houstonthings.com](https://houstonthings.com)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Local Development
 
-### Markdown
+**Quick Start**:
+```bash
+# Use Homebrew Ruby (required!)
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Install dependencies
+bundle install
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Start development server
+bundle exec jekyll serve
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Visit http://127.0.0.1:4000 to view locally.
 
-### Jekyll Themes
+## Common Issues
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamie-houston/jamie-houston.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**Bundler version error?** You're using system Ruby instead of Homebrew Ruby:
+```bash
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+bundle exec jekyll serve
+```
 
-### Support or Contact
+**Config changes not showing?** Restart the Jekyll server after editing `_config.yml`.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Site Details
+
+- **Theme**: Chirpy
+- **Deployment**: GitHub Pages via Actions
+- **Ruby Version**: 3.4+ (via Homebrew)
+
+For detailed development guidance, see [CLAUDE.md](CLAUDE.md).
