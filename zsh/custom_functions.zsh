@@ -1,3 +1,5 @@
+# $ ln ./zsh/custom_functions.zsh ~/.oh-my-zsh/custom/custom_functions.zsh
+
 # Run commands in adb
 # p - paste (clipboard)
 # t - tab
@@ -31,11 +33,22 @@ function adbp() {
 }
 
 # delete all branches merged into main
-gclean() {
-    echo "=== Deleting all merged branches ==="
-    git remote prune origin
-    git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -df $1
-    echo "☑️ Done!"
+function gclean() {
+    echo "=== Fetching latest changes from remote ==="
+    git fetch -p
+
+    # Find and remove lock branches that no longer exist on remote
+    for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do
+        echo "Deleting local branch '$branch' (remote branch is gone)"
+        git branch -D "$branch"
+    done
+    
+    # Check if any branches were actually deleted
+    if [ $? -eq 0 ]; then
+         echo "☑️ Cleanup Done!"
+    else
+        echo "No branches needed cleanup"
+    fi
 }
 
 # Get the size of gradle caches, wrappers and daemons in human readable format
@@ -73,4 +86,47 @@ function gradleClean(){
     gradleCacheWrapperDaemonsSize
     echo "=========================================================="
     echo " Done ✅"
+}
+
+# Main clone function
+clone() {
+    # Check if argument is provided
+    if [[ -z "$1" ]]; then
+        echo "Usage: clone <git-url>"
+        echo "Example: clone git@github.com:jamie-houston/jamie-houston.github.io.git"
+        return 1
+    fi
+
+    # Extract user/org from git url
+    typeset git_url=$1
+    typeset user_name=""
+    typeset current_dir=""
+
+    if [[ $git_url =~ :([^/]+)/ ]]; then
+        user_name="${match[1]}"
+    else
+        echo "Error: Could not extract user name from git URL"
+        return 1
+    fi
+
+    # Get current directory name
+    typeset current_dir="${PWD##*/}"
+
+    # Check if we're already in the user directory
+    if [[ "$current_dir" != "$user_name" ]]; then
+        echo "Creating and entering directory: $user_name"
+        mkcd "$user_name"
+    fi
+
+    # Clone the repo
+    echo "Cloning repository"
+    git clone "$git_url"
+
+    # Check if clone was successful
+    if [[ $? -eq 0 ]]; then
+        echo "Successfully cloned repository in $(pwd)"
+    else
+        echo "Error: Failed to clone repo"
+        return 1
+    fi
 }
