@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Building a Productivity System with Obsidian and Claude Code"
+subtitle: "Combine flexible note-taking with intelligent automation for better productivity"
 date: 2025-09-09 12:00:00 -0800
 categories: [productivity, obsidian]
+background: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
 ---
 
 Setting up an effective productivity system can transform how you manage tasks and projects. After experimenting with various approaches, I've found that combining Obsidian's flexible note-taking capabilities with Claude Code's automation potential creates a powerful workflow for task management and project tracking.
@@ -28,6 +30,8 @@ Most task management systems suffer from a fundamental problem: they isolate tas
 4. **Future-Proof**: Plain markdown files that aren't locked into any proprietary system
 
 ## Essential Vault Structure
+
+![Productivity System Organization](https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80){: .img-fluid}
 
 Here's the folder structure that forms the foundation of an effective Obsidian productivity system:
 

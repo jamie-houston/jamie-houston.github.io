@@ -8,12 +8,13 @@ url: "https://houstonthings.com"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+theme: jekyll-theme-clean-blog
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Posts settings
 permalink: /:categories/:year/:month/:day/:title:output_ext
@@ -25,11 +26,10 @@ paginate_path: "/page/:num/"
 # Social links
 github_username: jamie-houston
 
-# Header pages
-header_pages:
-  - index.md
-  - resume.md
+# Google Analytics
+google_analytics: G-L2NJ2WBR4S
 
+# Clean Blog theme doesn't use header_pagesL2NJ2WBR4
 # Exclude from build
 exclude:
   - README.md
