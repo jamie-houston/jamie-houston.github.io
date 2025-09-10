@@ -8,13 +8,14 @@ url: "https://houstonthings.com"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-remote-theme
 
 # Posts settings
 permalink: /:categories/:year/:month/:day/:title:output_ext
