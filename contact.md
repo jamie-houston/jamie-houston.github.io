@@ -16,6 +16,8 @@ I'm always interested in connecting with fellow developers, discussing new techn
 
 **Location**: St. Louis, MO
 
+**Fun Fact**: You might catch me performing improv comedy at [The Improv Shop](https://www.theimprovshop.com/) when I'm not coding!
+
 ### What I'm Interested In
 
 - **Technical Discussions**: AI tooling, mobile development, productivity systems

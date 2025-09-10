@@ -27,9 +27,15 @@ I'm particularly interested in:
 
 When I'm not coding, I enjoy exploring new technologies, optimizing workflows, and sharing what I learn through writing and teaching.
 
+I also perform improv comedy at [The Improv Shop](https://www.theimprovshop.com/) in St. Louis, which keeps me creative and helps with quick thinking under pressure - skills that surprisingly translate well to debugging production issues!
+
+## Personal Life
+
+I'm blessed to share my life with my wonderful wife and our three amazing kids. Our household is completed by two cats who serve as excellent rubber duck debugging partners (though they're terrible at spotting syntax errors).
+
 ## Connect
 
 Feel free to reach out if you want to discuss technology, productivity systems, or potential collaborations.
 
-- **Email**: jamie.houston@gmail.com
+- **Email**: [jamie.houston@gmail.com](mailto:jamie.houston@gmail.com)
 - **GitHub**: [jamie-houston](https://github.com/jamie-houston)

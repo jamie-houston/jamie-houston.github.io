@@ -6,7 +6,7 @@ background: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=
 ---
 
 # JAMIE HOUSTON
-**St Louis, MO 63122** | **206.852.2852** | **jamie@houstonthings.com**
+**St Louis, MO 63122** | **206.852.2852** | **[jamie.houston@gmail.com](mailto:jamie.houston@gmail.com)**
 
 ## PROFESSIONAL SUMMARY
 
