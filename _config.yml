@@ -8,7 +8,7 @@ url: "https://houstonthings.com"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
+remote_theme: "StartBootstrap/startbootstrap-clean-blog-jekyll@v5.0.11"
 
 # Plugins
 plugins:
