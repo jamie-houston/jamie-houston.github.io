@@ -1,2 +1,36 @@
+title: Jamie Houston's Blog
+description: A blog about development tools, tips, and tech adventures
+author: Jamie Houston
+email: your.email@example.com
+baseurl: ""
+url: "https://jamie-houston.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
 theme: jekyll-theme-architect
-source: site
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Posts settings
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# Pagination
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Social links (optional)
+github_username: jamie-houston
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
