@@ -4,11 +4,15 @@ title: "Setting Up a GitHub Pages Blog with Claude Code"
 date: 2025-09-07 14:20:00 -0800
 categories: [tutorial, github-pages, claude-code]
 tags: [jekyll, blog, setup, automation]
+image: /assets/img/github-pages-jekyll-setup.jpg
 ---
 
 # Setting Up a GitHub Pages Blog with Claude Code
 
 Today I decided to set up a GitHub Pages blog, and I thought it would be interesting to document the entire process using [Claude Code](https://claude.ai/code) - Anthropic's CLI tool for development tasks.
+
+![GitHub Pages setup process with Jekyll](/assets/img/github-pages-setup-process.png)
+*The GitHub Pages setup process showing Jekyll configuration and deployment*
 
 ## The Initial Prompt
 

@@ -3,9 +3,13 @@ layout: post
 title: "Building a Productivity System with Obsidian and Claude Code"
 date: 2025-09-09 12:00:00 -0800
 categories: [productivity, obsidian]
+image: /assets/img/obsidian-claude-workflow.jpg
 ---
 
 Setting up an effective productivity system can transform how you manage tasks and projects. After experimenting with various approaches, I've found that combining Obsidian's flexible note-taking capabilities with Claude Code's automation potential creates a powerful workflow for task management and project tracking.
+
+![Obsidian workspace showing interconnected notes and tasks](/assets/img/obsidian-workspace-example.png)
+*An Obsidian workspace demonstrating the interconnected nature of notes and tasks*
 
 ## The Challenge with Traditional Task Management
 

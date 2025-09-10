@@ -3,9 +3,13 @@ layout: post
 title: "Dynamic Daily Scheduling with Dataview in Obsidian"
 date: 2025-09-08 10:00:00 -0800
 categories: [productivity, obsidian, dataview]
+image: /assets/img/obsidian-dataview-scheduling.jpg
 ---
 
 Traditional task management often requires you to duplicate tasks across multiple places - once in your project notes and again in your daily schedule. This creates synchronization problems and breaks the connection between tasks and their context. Here's how to solve this with Obsidian's Dataview plugin.
+
+![Obsidian Dataview in action showing dynamic task scheduling](/assets/img/obsidian-dataview-example.png)
+*Obsidian's Dataview plugin automatically populates your daily schedule from tasks across your vault*
 
 ## The Problem with Manual Scheduling
 
