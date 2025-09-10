@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setting Up a GitHub Pages Blog with Claude Code"
-date: 2025-09-10 14:20:00 -0800
+date: 2025-09-07 14:20:00 -0800
 categories: [tutorial, github-pages, claude-code]
 tags: [jekyll, blog, setup, automation]
 ---

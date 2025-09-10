@@ -8,7 +8,7 @@ url: "https://houstonthings.com"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: jekyll-theme-chirpy
+theme: minima
 
 # Plugins
 plugins:
@@ -22,8 +22,13 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 paginate: 5
 paginate_path: "/page/:num/"
 
-# Social links (optional)
+# Social links
 github_username: jamie-houston
+
+# Header pages
+header_pages:
+  - index.md
+  - resume.md
 
 # Exclude from build
 exclude:
