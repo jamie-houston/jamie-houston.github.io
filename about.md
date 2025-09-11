@@ -37,5 +37,5 @@ I'm blessed to share my life with my wonderful wife and our three amazing kids. 
 
 Feel free to reach out if you want to discuss technology, productivity systems, or potential collaborations.
 
-- **Email**: [jamie.houston@gmail.com](mailto:jamie.houston@gmail.com)
+- **Email**: [jamie@houstonthings.com](mailto:jamie@houstonthings.com)
 - **GitHub**: [jamie-houston](https://github.com/jamie-houston)
