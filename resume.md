@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 subtitle: Software Architect & Mobile Development Expert
-background: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
+background: https://images.unsplash.com/photo-1743309411498-a0f4f4b96b65?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 # JAMIE HOUSTON
