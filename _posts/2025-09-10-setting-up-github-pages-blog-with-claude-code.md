@@ -5,7 +5,7 @@ subtitle: "From zero to blog in minutes with intelligent automation"
 date: 2025-09-07 14:20:00 -0800
 categories: [tutorial, github-pages, claude-code]
 tags: [jekyll, blog, setup, automation]
-background: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+background: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 ---
 
 # Setting Up a GitHub Pages Blog with Claude Code
