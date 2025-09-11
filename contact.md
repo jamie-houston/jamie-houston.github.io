@@ -8,7 +8,8 @@ background: https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=r
 
 I'm always interested in connecting with fellow developers, discussing new technologies, or exploring collaboration opportunities. Use the form below to reach out!
 
-<form name="contact" method="POST" data-netlify="true" class="contact-form">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+  <input type="hidden" name="form-name" value="contact">
   <div class="form-group">
     <label for="name">Name *</label>
     <input type="text" id="name" name="name" required class="form-control">
