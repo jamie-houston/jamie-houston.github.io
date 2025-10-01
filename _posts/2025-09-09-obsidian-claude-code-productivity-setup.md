@@ -31,7 +31,7 @@ Most task management systems suffer from a fundamental problem: they isolate tas
 
 ## Essential Vault Structure
 
-![Productivity System Organization](https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80){: .img-fluid}
+![Productivity System Organization](https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80){: .img-fluid}
 
 Here's the folder structure that forms the foundation of an effective Obsidian productivity system:
 
