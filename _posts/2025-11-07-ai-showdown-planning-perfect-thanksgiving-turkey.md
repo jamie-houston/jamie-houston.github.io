@@ -10,9 +10,9 @@ background: https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?ixlib=r
 
 # AI Showdown: Planning the Perfect Thanksgiving Turkey
 
-Every Thanksgiving, I make a recipe similar to this [turkey recipe](https://www.marthastewart.com/353184/perfect-roast-turkey) (thanks Martha!). It's not complicated, but on Thanksgiving day, every dish is a dance with father time.
+Every Thanksgiving, I make a recipe similar to this [Martha Steward Recipe](https://www.marthastewart.com/353184/perfect-roast-turkey). It's not complicated, but on Thanksgiving day, every dish is a dance with father time.
 
-Everything needs to work backwards from the magic minute (which could be the kids starving or the next game starts...)
+Everything needs to work backwards from the magic minute (which could be the kids starving or the next game starting...)
 
 A few years ago, I decided to let AI do the hard work. But which AI? I threw the same prompt at [ChatGPT](https://chatgpt.com), [Google Gemini](https://gemini.google.com/app), and [Claude](https://claude.ai/) to see who would be my new best friend (or at least assistant).
 
@@ -35,7 +35,7 @@ Here's Martha's recipe (abbreviated):
 8. **Remove:** At a certain time based on weight, remove from oven
 9. **Rest:** 30 minutes before carving
 
-Simple enough, right? But when you're working with a 13-pound bird that needs basting every 30 minutes and you want to eat at 5pm, suddenly you're doing mental math while trying to figure out if you have enough cheesecloth.
+Simple enough, right? But when you're working with a 13-pound bird that needs basting every 30 minutes, cloth removal, time based on weight, and you want to eat at 5pm, suddenly you're doing mental math while getting yelled at for not putting the potatoes in.
 
 ## The Prompt
 
@@ -105,36 +105,50 @@ Claude came in last (alphabetically) but delivered what the others couldn't.
 Target: Dinner at 5:00 PM
 Turkey: 13 pounds (pre-brined)
 
-THANKSGIVING DAY
-11:30 AM - Remove turkey from fridge, let stand at room temp
-12:00 PM - Prepare butter-wine mixture and cheesecloth
-1:00 PM - Season turkey, drape with soaked cheesecloth
-1:15 PM - Turkey goes in oven at 450°F (2 hours 50 minutes)
-1:45 PM - First basting (every 30 min after)
-2:15 PM - Second basting
-2:45 PM - Third basting
-3:15 PM - Fourth basting
-3:45 PM - Fifth basting
-4:05 PM - Remove from oven, begin 30-minute rest
-4:35 PM - Carving begins
-5:00 PM - Dinner is served
+Total required time:
+- 2 hours for turkey to come to room temperature
+- 4 hours cooking time (possibly 4.5 if needed)
+- 30 minutes resting time
+- 20 minutes for gravy preparation
+- Plus initial prep time (approximately 30 minutes)
+
+THANKSGIVING DAY TIMELINE:
+10:00 AM - Start bringing turkey to room temperature
+12:00 PM - Turkey reaches room temperature, begin prep
+12:30 PM - Heat oven to 450°F, prepare cheesecloth and butter mixture,
+           stuff and prepare turkey
+1:00 PM  - Put turkey in oven at 450°F
+1:30 PM  - Reduce heat to 350°F (first baste)
+2:00 PM  - Second basting
+2:30 PM  - Third basting
+3:00 PM  - Fourth basting
+3:30 PM  - Remove cheesecloth, turn pan, baste
+4:00 PM  - Another basting
+4:30 PM  - Check temperature, remove from oven if done
+4:30-5:00 PM - Rest turkey and make gravy
+5:00 PM  - Serve dinner
+
+Note: Since your turkey is 13 pounds, it may cook slightly faster
+than this recipe suggests. Start checking the temperature around
+4:00 PM. If it reaches 180°F in the thigh before 4:30, you can
+remove it earlier and let it rest longer.
 ```
 
 **What Claude Got Right:**
 - **Everything**
-- Worked backwards from 5pm including the rest time
-- Included the 2.5-hour room temperature step (started early to give buffer)
-- Accounted for prep time between steps
-- **Scheduled all five basting sessions at 30-minute intervals**
-- Even noted when carving should begin
-- Roast time: 13 lbs × 13 min/lb ≈ 169 minutes ≈ 2.8 hours
-- 30-minute rest period
-- All steps sequenced properly
+- Worked backwards from 5pm including rest time AND gravy-making time
+- Included the full 2-hour room temperature step
+- Accounted for 30 minutes of prep time before cooking
+- **Scheduled all basting sessions at 30-minute intervals**
+- Remembered the critical step to reduce oven temp from 450°F to 350°F
+- Included the cheesecloth removal step at 3:30 PM
+- Even provided a helpful note about checking temperature early for a smaller bird
+- Built in flexibility for the timeline
 
 **What Claude Got Wrong:**
 - Nothing. Seriously, I followed this timeline (set alarms for basting) and ate at 5:02pm (because I was slow carving).
 
-**Score: 10/10** - This is what I actually needed. A working timeline that accounts for reality, including those annoying-but-necessary basting interruptions.
+**Score: 10/10** - This is what I actually needed. A working timeline that accounts for reality, including those annoying-but-necessary basting interruptions and even the gravy prep time.
 
 ## Why This Matters
 
