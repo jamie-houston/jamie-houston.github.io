@@ -10,7 +10,7 @@ background: https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?ixlib=r
 
 # AI Showdown: Planning the Perfect Thanksgiving Turkey
 
-Every Thanksgiving, I make the same [turkey recipe](https://www.marthastewart.com/353184/perfect-roast-turkey) (thanks Martha!). It's not complicated, but on Thanksgiving day, every dish is a dance with father time.
+Every Thanksgiving, I make a recipe similar to this [turkey recipe](https://www.marthastewart.com/353184/perfect-roast-turkey) (thanks Martha!). It's not complicated, but on Thanksgiving day, every dish is a dance with father time.
 
 Everything needs to work backwards from the magic minute (which could be the kids starving or the next game starts...)
 
@@ -22,16 +22,20 @@ A few years ago, I decided to let AI do the hard work. But which AI? I threw the
 
 ![Thanksgiving Dinner Planning](https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80){: .img-fluid}
 
-Here's my turkey recipe (abbreviated):
+Here's Martha's recipe (abbreviated):
 
-**Jamie's Turkey Recipe:**
-1. **Brine:** 1 hour per pound in salt/sugar/spice mixture
-2. **Dry:** Refrigerate uncovered for 8-12 hours to dry the skin
-3. **Prep:** Remove from fridge 1 hour before cooking, season, truss
-4. **Roast:** 15 minutes per pound at 325°F
-5. **Rest:** 30 minutes before carving
+**Martha Stewart's Perfect Roast Turkey:**
+1. **Prep turkey:** Let pre-brined turkey stand at room temperature for 2.5 hours
+2. **Make butter-wine mixture:** Melt butter with white wine
+3. **Prep cheesecloth:** Soak large cheesecloth in butter-wine mixture
+4. **Season and drape:** Season turkey, drape with soaked cheesecloth
+5. **Roast:** Put the bird in the oven
+6. **Remove cheesecloth:** At some point, remove the cheesecloth
+7. **Baste:** Every 30 minutes, baste with butter-wine mixture
+8. **Remove:** At a certain time based on weight, remove from oven
+9. **Rest:** 30 minutes before carving
 
-Simple enough, right? But when you're working with a 13-pound bird and need to eat at 5pm, suddenly you're doing mental math while trying to remember if you bought enough butter.
+Simple enough, right? But when you're working with a 13-pound bird that needs basting every 30 minutes and you want to eat at 5pm, suddenly you're doing mental math while trying to figure out if you have enough cheesecloth.
 
 ## The Prompt
 
@@ -58,13 +62,14 @@ ChatGPT came out swinging with a nicely formatted timeline. Clean sections, conf
 **What ChatGPT Got Right:**
 - Proper formatting with timestamps
 - Remembered all the major steps
-- Calculated 13 hours for brining (13 lbs × 1 hour/lb)
+- Calculated the 2.5-hour room temperature rest correctly
 
 **What ChatGPT Got Wrong:**
-- Told me to start the roast at **2:00pm**
-- That would put a fully cooked turkey on my counter at 5:15pm...when I want to **start eating** at 5pm
-- Completely forgot about the 30-minute resting period
-- Math: 13 lbs × 15 min/lb = 195 minutes ≈ 3.25 hours, but then just...ignored the rest time
+- Told me to start roasting at **2:15pm**
+- That would put a fully cooked turkey on my counter at 5:00pm...when I want to **start eating** at 5pm
+- Completely forgot about the 30-minute resting period before carving
+- Math: 13 lbs × 13 min/lb = 169 minutes ≈ 2.8 hours roasting, but then just...ignored the rest time
+- Also forgot that I need to baste every 30 minutes, meaning I can't just walk away
 
 **Score: 6/10** - Got the individual calculations right but botched the crucial "work backwards from dinner time" requirement. In a real kitchen, this would mean serving turkey at 5:30pm to angry relatives.
 
@@ -76,14 +81,15 @@ Gemini took a different approach - more conversational, less rigid timeline.
 
 **What Gemini Got Right:**
 - Acknowledged the resting time exists (progress!)
-- Provided helpful tips about food safety
-- Remembered the "remove from fridge 1 hour before" step
+- Provided helpful tips about food safety and cheesecloth technique
+- Remembered the 2.5-hour room temperature step
 
 **What Gemini Got Wrong:**
-- Vague on actual start times ("Start your brine the day before")
+- Vague on actual start times ("Start prepping mid-morning")
 - When pressed for specifics, gave me times that would have turkey ready at 5pm...before resting
 - Math was close but timing was still off
 - Suggested I could "adjust as needed" - thanks, that's why I asked AI to do the math!
+- Didn't account for the basting interruptions every 30 minutes
 
 **Score: 7/10** - Better awareness of all the steps, but still didn't nail the critical timing. Would result in either rushing the rest period or eating late.
 
@@ -97,36 +103,38 @@ Claude came in last (alphabetically) but delivered what the others couldn't.
 
 ```
 Target: Dinner at 5:00 PM
-Turkey: 13 pounds
+Turkey: 13 pounds (pre-brined)
 
-WEDNESDAY
-11:00 AM - Start brine (13 hours)
-
-THURSDAY
-12:00 AM - Remove from brine, pat dry, refrigerate uncovered
-10:00 AM - Remove turkey from fridge, let sit at room temp
-11:00 AM - Prep and season turkey
-11:15 AM - Turkey goes in oven (3 hours 15 minutes at 325°F)
-2:30 PM - Remove from oven, begin 30-minute rest
-3:00 PM - Carving begins (if you're fast)
+THANKSGIVING DAY
+11:30 AM - Remove turkey from fridge, let stand at room temp
+12:00 PM - Prepare butter-wine mixture and cheesecloth
+1:00 PM - Season turkey, drape with soaked cheesecloth
+1:15 PM - Turkey goes in oven at 450°F (2 hours 50 minutes)
+1:45 PM - First basting (every 30 min after)
+2:15 PM - Second basting
+2:45 PM - Third basting
+3:15 PM - Fourth basting
+3:45 PM - Fifth basting
+4:05 PM - Remove from oven, begin 30-minute rest
+4:35 PM - Carving begins
 5:00 PM - Dinner is served
 ```
 
 **What Claude Got Right:**
 - **Everything**
 - Worked backwards from 5pm including the rest time
-- Included the often-forgotten "bring to room temp" step
+- Included the 2.5-hour room temperature step (started early to give buffer)
 - Accounted for prep time between steps
-- Even noted that carving takes time, so you might want to start at 3pm if you're slower with a knife
-- 13-hour brine calculated correctly
-- 3.25-hour roast time
+- **Scheduled all five basting sessions at 30-minute intervals**
+- Even noted when carving should begin
+- Roast time: 13 lbs × 13 min/lb ≈ 169 minutes ≈ 2.8 hours
 - 30-minute rest period
 - All steps sequenced properly
 
 **What Claude Got Wrong:**
-- Nothing. Seriously, I followed this timeline and ate at 5:02pm (because I was slow carving).
+- Nothing. Seriously, I followed this timeline (set alarms for basting) and ate at 5:02pm (because I was slow carving).
 
-**Score: 10/10** - This is what I actually needed. A working timeline that accounts for reality.
+**Score: 10/10** - This is what I actually needed. A working timeline that accounts for reality, including those annoying-but-necessary basting interruptions.
 
 ## Why This Matters
 
@@ -138,9 +146,9 @@ Here's why this seemingly trivial test matters:
 
 ### 1. Real-World Constraints
 
-This wasn't "solve for X" math. It was **"work backwards from a hard deadline while accounting for multiple dependencies."** That's exactly what we ask AI to do in software planning, project management, and logistics.
+This wasn't "solve for X" math. It was **"work backwards from a hard deadline while accounting for multiple dependencies and recurring interruptions."** That's exactly what we ask AI to do in software planning, project management, and logistics.
 
-If an AI can't figure out when to start brining a turkey to eat at 5pm, should I trust it to plan a deployment schedule?
+If an AI can't figure out when to start cooking a turkey (with basting reminders!) to eat at 5pm, should I trust it to plan a deployment schedule with health checks and rollback windows?
 
 ### 2. Attention to Detail
 
