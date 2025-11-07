@@ -14,7 +14,7 @@ Every Thanksgiving, I make a recipe similar to this [Martha Steward Recipe](http
 
 Everything needs to work backwards from the magic minute (which could be the kids starving or the next game starting...)
 
-A few years ago, I decided to let AI do the hard work. But which AI? I threw the same prompt at [ChatGPT](https://chatgpt.com), [Google Gemini](https://gemini.google.com/app), and [Claude](https://claude.ai/) to see who would be my new best friend (or at least assistant).
+Last year, I decided to let AI do the hard work. But which AI? I threw the same prompt at [ChatGPT](https://chatgpt.com), [Google Gemini](https://gemini.google.com/app), and [Claude](https://claude.ai/) to see who would be my new best friend (or at least assistant).
 
 **Spoiler alert:** Only one got it right.  And if you've read my other blog posts, you already know which one it was.
 
@@ -53,51 +53,77 @@ I wanted:
 
 Let's see how they did.
 
-## Round 1: ChatGPT
-
-![ChatGPT Logo](https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80){: .img-fluid}
-
-ChatGPT came out swinging with a nicely formatted timeline. Clean sections, confident tone, exact times.
-
-**What ChatGPT Got Right:**
-- Proper formatting with timestamps
-- Remembered all the major steps
-- Calculated the 2.5-hour room temperature rest correctly
-
-**What ChatGPT Got Wrong:**
-- Told me to start roasting at **2:15pm**
-- That would put a fully cooked turkey on my counter at 5:00pm...when I want to **start eating** at 5pm
-- Completely forgot about the 30-minute resting period before carving
-- Math: 13 lbs × 13 min/lb = 169 minutes ≈ 2.8 hours roasting, but then just...ignored the rest time
-- Also forgot that I need to baste every 30 minutes, meaning I can't just walk away
-
-**Score: 6/10** - Got the individual calculations right but botched the crucial "work backwards from dinner time" requirement. In a real kitchen, this would mean serving turkey at 5:30pm to angry relatives.
-
-## Round 2: Google Gemini
+## Round 1: Google Gemini
 
 ![Google Gemini](https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80){: .img-fluid}
 
-Gemini took a different approach - more conversational, less rigid timeline.
+Gemini gave me a detailed timeline with specific times. Very confident. Also very wrong.
+
+**The Full Timeline Gemini Provided:**
+
+```
+Total Roasting Time: Approximately 3 hours and 30 minutes, plus 2 hours
+resting time, and additional time for prep and gravy.
+
+Prep & Cooking Timeline:
+
+2:00 PM - Rinse and dry the turkey. Let it rest at room temperature for
+          2 hours. Prep your cheesecloth with butter and wine. Preheat
+          oven to 450°F.
+4:00 PM - Stuff and truss the turkey. Place turkey in the oven, legs
+          first, with the cheesecloth. Cook at 450°F for 30 minutes.
+4:30 PM - Reduce heat to 350°F. Baste turkey.
+Every 30 minutes until 7:00 PM - Baste the turkey.
+7:00 PM - Remove cheesecloth. Turn the turkey so the breast faces the
+          back of the oven. Baste.
+7:30 PM - Baste the turkey.
+8:00 PM - Check the turkey's temperature (thickest part of the thigh
+          should be 180°F). If needed, cook for another 20-30 minutes.
+8:00 - 8:30 PM - Remove turkey from oven and let it rest for 30 minutes.
+                 Make the gravy.
+8:30 - 9:00 PM - Carve and serve!
+
+Important Notes:
+This timeline is an estimate. Oven temperatures and turkey size can
+affect cooking time. Always use a meat thermometer to ensure doneness.
+Consider making the stuffing and gravy ahead of time to streamline
+the process.
+Enjoy your delicious turkey dinner!
+```
 
 **What Gemini Got Right:**
-- Acknowledged the resting time exists (progress!)
-- Provided helpful tips about food safety and cheesecloth technique
-- Remembered the 2.5-hour room temperature step
+- Included all the steps (room temp rest, basting, cheesecloth removal, etc.)
+- Provided helpful safety notes about using a thermometer
+- Remembered the 30-minute resting period
+- Listed basting intervals
 
-**What Gemini Got Wrong:**
-- Vague on actual start times ("Start prepping mid-morning")
-- When pressed for specifics, gave me times that would have turkey ready at 5pm...before resting
-- Math was close but timing was still off
-- Suggested I could "adjust as needed" - thanks, that's why I asked AI to do the math!
-- Didn't account for the basting interruptions every 30 minutes
+**What Gemini Got VERY Wrong:**
+- **I asked to eat at 5pm. Gemini has me serving dinner at 8:30-9:00 PM!**
+- Completely ignored the "eat at 5pm" requirement
+- Instead of working backwards from 5pm, it just calculated forward from an arbitrary start time
+- This isn't a timeline for my dinner - it's just a generic recipe timeline
 
-**Score: 7/10** - Better awareness of all the steps, but still didn't nail the critical timing. Would result in either rushing the rest period or eating late.
+**Score: 4/10** - Sure, it's technically correct cooking information. But it failed the fundamental requirement: working backwards from my 5pm deadline. This is like asking "how do I get to the airport by 3pm?" and getting directions that would get you there at 6pm.
+
+The timeline looks professional and detailed, which makes the failure even more dangerous - I might have trusted it without checking!
+
+## Round 2: ChatGPT
+
+![ChatGPT Logo](https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80){: .img-fluid}
+
+ChatGPT's response was similar to Gemini's - it provided a timeline, but completely missed the "eat at 5pm" requirement. Unfortunately, I can't find the exact ChatGPT response from last year, but the key issue was the same: the timeline was completely wrong (by hours)
+
+**What ChatGPT Got Wrong:**
+- Didn't work backwards from the 5pm deadline
+- Added unecessary time between steps to make the timeline much longer
+
+**Score: 5/10** - Had the right cooking information, but completely failed at the actual task: figuring out when each step needed to be done.
 
 ## Round 3: Claude
 
 ![Claude AI](https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80){: .img-fluid}
 
-Claude came in last (alphabetically) but delivered what the others couldn't.
+Last, and most accurate, was Claude
 
 **The Full Timeline Claude Provided:**
 
@@ -135,20 +161,19 @@ remove it earlier and let it rest longer.
 ```
 
 **What Claude Got Right:**
-- **Everything**
+- **Almost Everything**
 - Worked backwards from 5pm including rest time AND gravy-making time
 - Included the full 2-hour room temperature step
-- Accounted for 30 minutes of prep time before cooking
+- ... but added 30 minutes of prep time (that could've been done during the previous step) 
 - **Scheduled all basting sessions at 30-minute intervals**
 - Remembered the critical step to reduce oven temp from 450°F to 350°F
-- Included the cheesecloth removal step at 3:30 PM
 - Even provided a helpful note about checking temperature early for a smaller bird
 - Built in flexibility for the timeline
 
 **What Claude Got Wrong:**
-- Nothing. Seriously, I followed this timeline (set alarms for basting) and ate at 5:02pm (because I was slow carving).
+- Added 30 minutes to pre-heat the oven when after the turkey sat for 2 hours.
 
-**Score: 10/10** - This is what I actually needed. A working timeline that accounts for reality, including those annoying-but-necessary basting interruptions and even the gravy prep time.
+**Score: 9/10** - This is what I actually needed. A working timeline that accounts for reality, including those annoying-but-necessary basting interruptions and even the gravy prep time.
 
 ## Why This Matters
 
@@ -160,31 +185,29 @@ Here's why this seemingly trivial test matters:
 
 ### 1. Real-World Constraints
 
-This wasn't "solve for X" math. It was **"work backwards from a hard deadline while accounting for multiple dependencies and recurring interruptions."** That's exactly what we ask AI to do in software planning, project management, and logistics.
+This wasn't "solve for X" math. It was **"work backwards from a hard deadline while accounting for multiple dependencies and recurring interruptions."** This is a scenario that's applicable in personal and professional life, with software and home projects.
 
 If an AI can't figure out when to start cooking a turkey (with basting reminders!) to eat at 5pm, should I trust it to plan a deployment schedule with health checks and rollback windows?
 
-### 2. Attention to Detail
+### 2. Understanding the Actual Question
 
-The difference between ChatGPT and Claude was **one 30-minute rest period**. Small detail, big consequence. In cooking, that's the difference between juicy turkey and dry turkey. In code, that's the difference between working software and a production incident.
+The difference between Gemini/ChatGPT and Claude wasn't about cooking knowledge - they all knew how to roast a turkey. The difference was **understanding what I was actually asking for**.
 
-### 3. Implicit Requirements
+I didn't ask "how long does it take to cook a 13-pound turkey?" I asked "what's my timeline to eat at 5pm with a 13-pound turkey?"
 
-I didn't explicitly say "account for resting time in your backwards calculation." Claude inferred that "eat at 5pm" means "finished cooking, rested, and ready to carve at 5pm." ChatGPT took it literally as "out of the oven at 5pm."
+Gemini gave me a great answer to the wrong question. Claude answered my actual question.
 
-This kind of requirement ambiguity is **everywhere** in real work. The AI that can correctly infer intent is more useful.
+### 3. Confident But Wrong is Dangerous
+
+Gemini's response looked professional. Detailed timeline, specific times, helpful notes. In other scenarios I could've trusted this kind of answer and ended up way off track.
+
+**Confident wrong answers are worse than uncertain right answers.** In code reviews, in architecture decisions, in production incidents - I'd rather work with someone who says "I think it's X but let me verify" than someone who confidently gives me the wrong solution.
 
 ## The Takeaway
 
-This isn't a "Claude is better than ChatGPT" post (though...you know). It's about understanding that different AI models handle **temporal reasoning** and **constraint satisfaction** differently.
+This isn't a "Claude is better than ChatGPT" post (though... this isn't the only example I've had...). It's about understanding that different AI models handle **temporal reasoning** and **constraint satisfaction** differently.
 
 For simple questions and creative writing, they're all pretty good. For multi-step planning with hard deadlines and dependencies? Test them. Verify their work. Check the math.
-
-**What I Learned:**
-- When timing matters, I'm using Claude
-- ChatGPT is still my go-to for creative brainstorming
-- Gemini has solid safety awareness but needs to commit to specifics
-- No AI is perfect - but some are better at specific tasks
 
 ## Try It Yourself
 
@@ -192,7 +215,13 @@ Here's a fun experiment: Take a recipe (or project plan, or travel itinerary) wi
 
 You might be surprised at the differences.
 
-And if you're cooking a turkey this Thanksgiving, maybe have AI double-check your math. Just make sure it accounts for the rest time.
+## Final Thoughts
+
+This experiment was originally done for Thanksgiving 2024.  I re-ran the same prompt today and got much better results (although ChatGPT and Gemini still added unecessary time to the beginning). These models are constantly evolving and improving.
+
+My main points are to try out different AI tools, verify the results, and let AI help you with things in your life you don't necessarily need or want to spend time on.  
+
+> Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can spend it. Once you’ve lost it you can never get it back. - Harvey Mackay
 
 ---
 
